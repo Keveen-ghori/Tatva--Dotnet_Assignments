@@ -1,0 +1,56 @@
+
+.row {
+    height: 100vh;
+}
+
+.carousel {
+    height: 100%;
+}
+
+.carousel-inner, .carousel-item {
+    height: 100%;
+}
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+    }
+
+.logbutton {
+    border-radius: 23px !important;
+    color: #F88634 !important;
+    border-color: #F88634 !important;
+}
+
+.created {
+    color: #2B64B1;
+    text-decoration: none;
+}
+
+
+
+.ancher {
+    margin-top: 227px !important;
+}
+
+
+
+.decoratian1 {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 991px) {
+    .marginrespon {
+        margin-top: 30px;
+    }
+    /* .formmargin{
+      margin-left: 40px!important;
+  } */
+    .policy {
+        margin-top: 100px !important;
+    }
+
+    .main__form {
+        margin-top: 2rem;
+    }
+}
