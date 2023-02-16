@@ -1,0 +1,109 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Mission Page";
+}
+<div class="container">
+    <div class="header d-flex justify-content-between justify-content-md-between align-items-center">
+        <div class="left d-flex align-items-center">
+            <a href="#" class="p-2 text-decoration-none">Explore</a>
+            <a href="#" class="p-2 text-decoration-none">Stories</a>
+            <a href="#" class="p-2 text-decoration-none">Policy</a>
+            <img src="~/Assets/drop-down.png" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                 aria-expanded="false" alt="More">
+            <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item p-2" href="#">My Profile</a></li>
+                <li><a class="dropdown-item p-2" href="#">Volunteering Timesheet</a></li>
+                <li><a class="dropdown-item p-2" href="#">Log Out</a></li>
+            </ul>
+        </div>
+        <div class="right d-flex align-items-center">
+            <img src="~/Assets/bell-big.png" alt="Notification" class="p-2" style="cursor: pointer;">
+            <div class="right d-flex align-items-center" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                 aria-expanded="false">
+                <img src="~/Assets/user-img.png" alt="Profile Pic" class="p-2 profile">
+                <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item p-2" href="#">My Profile</a></li>
+                    <li><a class="dropdown-item p-2" href="#">Volunteering Timesheet</a></li>
+                    <li><a class="dropdown-item p-2" href="#">Log Out</a></li>
+                </ul>
+                <a href="#" class="p-2 text-decoration-none name">John Doe</a>
+                <img src="~/Assets/drop-down.png" alt="More" class="p-2 down">
+            </div>
+        </div>
+
+    </div>
+    <hr class="m-0 p-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-12 ">
+                <input type="search" class="form-control no-border"
+                       style="font-family: Arial, FontAwesome; font-size: 20px;" placeholder=" &#xF002 Search mission..."
+                       aria-label="Search">
+            </div>
+            <div class=" dropdown border col px-3 d-flex justify-content-between">
+                <div class="align-self-center">
+                    <a href="#"
+                       class="d-block link-dark text-decoration-none data-toggle" id="dropdownUser2"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Country
+                    </a>
+                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                    </ul>
+                </div>
+                <div class="me-0 align-self-center"><img src="~/Assets/drop-down.png" alt=""></div>
+            </div>
+
+
+
+
+            <div class=" dropdown border col px-3 d-flex justify-content-between">
+                <div class="align-self-center">
+                    <a href="#"
+                       class="d-block link-dark text-decoration-none data-toggle" id="dropdownUser2"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        City
+                    </a>
+                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                    </ul>
+                </div>
+                <div class="me-0 align-self-center"><img src="~/Assets/drop-down.png" alt=""></div>
+            </div>
+
+
+            <div class=" dropdown border col px-3 d-flex justify-content-between">
+                <div class="align-self-center">
+                    <a href="#"
+                       class="d-block link-dark text-decoration-none data-toggle" id="dropdownUser2"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Theme
+                    </a>
+                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                    </ul>
+                </div>
+                <div class="me-0 align-self-center"><img src="~/Assets/drop-down.png" alt=""></div>
+            </div>
+
+
+            <div class=" dropdown border col px-3 d-flex justify-content-between">
+                <div class="align-self-center">
+                    <a href="#"
+                       class="d-block link-dark text-decoration-none data-toggle" id="dropdownUser2"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Skills
+                    </a>
+                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                    </ul>
+                </div>
+                <div class="me-0 align-self-center"><img src="~/Assets/drop-down.png" alt=""></div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

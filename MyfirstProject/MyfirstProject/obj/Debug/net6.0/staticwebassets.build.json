@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PAJtJgb8q5G4FwZxtKQ3wdtzwKLXopwDAW7V5yaQtE4=",
+  "Hash": "D0dolfCJq/DhJgWg2nXuey1vuh6nMjHAPliJqQiqVlI=",
   "Source": "MyfirstProject",
   "BasePath": "_content/MyfirstProject",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\pci101\\source\\repos\\MyfirstProject\\MyfirstProject\\wwwroot\\Grow-Trees-On-the-path-to-environment-sustainability-login.png",
+      "SourceId": "MyfirstProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pci101\\source\\repos\\MyfirstProject\\MyfirstProject\\wwwroot\\",
+      "BasePath": "_content/MyfirstProject",
+      "RelativePath": "Grow-Trees-On-the-path-to-environment-sustainability-login.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Grow-Trees-On-the-path-to-environment-sustainability-login.png"
     },
     {
       "Identity": "C:\\Users\\pci101\\source\\repos\\MyfirstProject\\MyfirstProject\\wwwroot\\js\\site.js",

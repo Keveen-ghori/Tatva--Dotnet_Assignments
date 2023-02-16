@@ -54,3 +54,136 @@
         margin-top: 2rem;
     }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+
+.container {
+}
+
+.header {
+    height: 72px;
+}
+
+    .header .left {
+        margin-left: 120px;
+        padding: 13.12px;
+    }
+
+.left a, .right a {
+    color: #333333;
+}
+
+.right .profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.down {
+    cursor: pointer;
+}
+
+#dropdownMenuButton1 {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    border: 1px solid #E8E8E8;
+    height: 135px;
+}
+
+.dropdown-item {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #414141;
+    border-bottom: 0.5px solid rgb(235, 235, 235);
+}
+
+    .dropdown-item:hover {
+        color: #F88634;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+    }
+
+.no-border:focus {
+    border-color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.no-border:valid {
+    border-color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form__icon {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.form__input {
+    position: relative;
+    z-index: 3;
+}
+
+    .form__input:placeholder-shown {
+        z-index: 1;
+    }
+
+@media only screen and (max-width: 600px) {
+    * {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header .left {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 441px) {
+    .header {
+        flex-wrap: nowrap;
+    }
+
+    .name {
+        display: none;
+    }
+}

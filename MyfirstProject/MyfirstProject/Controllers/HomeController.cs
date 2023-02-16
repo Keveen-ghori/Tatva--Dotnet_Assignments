@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AspNetCore;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewEngines;
 using MyfirstProject.Models;
 using System.Diagnostics;
 
 namespace MyfirstProject.Controllers
 {
+
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -18,7 +21,14 @@ namespace MyfirstProject.Controllers
             return View();
         }
 
+
         public IActionResult Login()
+        {
+            return View();
+        }
+
+        [Route("Home/Mission")]
+        public IActionResult Mission()
         {
             return View();
         }
