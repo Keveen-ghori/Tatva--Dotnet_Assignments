@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap');
+
+html, body {
+    height: 100%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.notification {
+    position: relative;
+    display: inline-block;
+}
+
+
+    .notification .badge {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        padding: 3px 5px;
+        border-radius: 50%;
+        background: #F88634;
+        color: white;
+    }
+
+.modal-content {
+    border-radius: 1rem;
+}
+
+
+    .modal-content:hover {
+        box-shadow: 2px 2px 2px black;
+    }
+
+.fa {
+    color: #2b84be;
+    font-size: 90px;
+    padding: 30px 0px;
+}
+
+.b1 {
+    background-color: #2b84be;
+    box-shadow: 0px 4px #337095;
+    font-size: 17px;
+}
+
+.r3 {
+    color: #c1c1c1;
+    font-weight: 500;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.main-search {
+    height: 72px;
+    border-bottom: 0.5px solid #D9D9D9;
+    color: #414141;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.header {
+    border-bottom: 0.5px solid #D9D9D9;
+}
+
+.mainLoginInput {
+    margin: 5px 0;
+}
+
+    .mainLoginInput::-webkit-input-placeholder {
+        font-family: FontAwesome;
+    }
+
+.form-select {
+    height: 72px;
+}

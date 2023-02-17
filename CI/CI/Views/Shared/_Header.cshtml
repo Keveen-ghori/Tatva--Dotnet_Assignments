@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CI Plateform</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CI.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--Page Header-->
+    <div class="header">
+        <div class="container p-0">
+            <nav class="navbar navbar-expand-lg container-fluid container-lg">
+                <div class="nav_left">
+                    <button class="navbar-toggler mr-4" type="button" data-bs-toggle="offcanvas" -moz-text-size-adjust
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <i class="bi bi-list navbar-toggler-icon" style="border:none"></i>
+                    </button>
+
+
+                    <a   class="navbar-brand mx-2 mx-lg-4" asp-controller="Home" asp-action="Index">
+                        <img alt="optimy" src="/Assignment/Assets/logo.png" />
+                    </a>
+                </div>
+                <div class="alert-light offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                     area-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" asp-controller="Home" asp-action="Index" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Explore
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-controller="Home" asp-action="Index">Action</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Home" asp-action="Index">Another action</a></li>
+
+                                    <li><a class="dropdown-item" asp-controller="Home" asp-action="Index">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Home" asp-action="Index">Stories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Home" asp-action="Index">News</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" asp-controller="Home" asp-action="Index" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Policy
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-controller="Home" asp-action="Index">Action</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Home" asp-action="Index">Another action</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Home" asp-action="Index">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="nav_right d-flex mx-3 mx-md-4">
+                    <a  asp-controller="Home" asp-action="Index" class="notification" data-toggle="modal" data-target="#form">
+                        <img src="/Assignment/Assets/bell.png" alt="">
+                        <span class="badge">9</span>
+                    </a>
+                    <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content py-md-5 px-md-4 p-sm-3 p-4">
+
+                                <h3>Push notifications</h3>
+                                <i class="fa fa-bell"></i>
+                                <p class="r3 px-md-5 px-sm-1">
+                                    Recieve push notifications to be updated to latest news.
+                                </p>
+
+                                <div class="text-center mb-3">
+                                    <button class="btn btn-primary w-50 rounded-pill b1">
+                                        Subscribe
+                                    </button>
+                                </div>
+
+                                <a  asp-controller="Home" asp-action="Index">Not now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        <li class="container-fluid px-0">
+                            <div class="px-1 dropdown-item d-flex justify-content-between" asp-controller="Home" asp-action="Index">
+                                <div class="m-0 p-0">
+                                    <img src="~/assets/settings.png" alt="." />
+                                </div>
+                                <div class="align-middle">
+                                    <h5 class="text-center fw-bold">Notification</h5>
+                                </div>
+                                <div class="text-end">
+                                    <a  class="text-muted" asp-controller="Home" asp-action="Index">clear all</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li class="container-fluid px-0">
+                            <div class="px-1 dropdown-item d-flex justify-content-between" asp-controller="Home" asp-action="Index">
+                                <div class="m-0 p-0">
+                                    <img src="~/assets/user1.png" alt="." />
+                                </div>
+                                <div class="align-middle">
+                                    <p class="mx-2" style="font-size: 14px">
+                                        John Doe recoomand mission: <b>Grow trees</b>
+                                    </p>
+                                </div>
+                                <div class="text-end">
+                                    <a  class="text-muted" asp-controller="Home" asp-action="Index">
+                                        <img src="~/assets/checked.png" alt="." />
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="container-fluid px-0">
+                            <div class="px-1 dropdown-item d-flex justify-content-between">
+                                <div class="m-0 p-0">
+                                    <img src="~/assets/user1.png" alt="." />
+                                </div>
+                                <div class="align-middle mx-2">
+                                    <p class="" style="font-size: 14px">
+                                        John Doe recoomand mission: <b>Grow trees</b>
+                                    </p>
+                                </div>
+                                <div class="text-end">
+                                    <a  class="text-muted" asp-controller="Home" asp-action="Index">
+                                        <img src="~/Assets/checked.png" alt="." />
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="container-fluid px-0">
+                            <div class="px-1 h-75 bg-gray text-light dropdown-item d-flex align-items-center justify-content-center">
+                                <p class="fw-bold">yesterday</p>
+                            </div>
+                        </li>
+                        <li class="container-fluid px-0">
+                            <div class="px-1 dropdown-item d-flex justify-content-between align-items-center">
+                                <div class="m-0 p-0">
+                                    <img src="~/assets/mission.png" alt="." />
+                                </div>
+                                <div class="mx-2">
+                                    <p class="m-auto" style="font-size: 14px">
+                                        New mission: <b>Save world</b>
+                                    </p>
+                                </div>
+                                <div class="text-end status status-online"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="btn-group ml-3 ml-lg-3">
+                    <div class="dropdown-toggle d-flex justify-content-center align-items-center header_profile"
+                         type="button" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="true"
+                         aria-expanded="false">
+                        <img src="/Assignment/Assets/user-img.png" class="rounded-circle profile_img" alt="." width="40"
+                             height="40" />
+                        <span class="px-1 d-none d-sm-inline-block">John Doe</span>
+                    </div>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item text-center" asp-controller="Home" asp-action="Index" >Dashboard</a></li>
+                        <li><a class="dropdown-item text-center" asp-controller="Home" asp-action="Index" >My Account</a></li>
+                        <li><a class="dropdown-item text-center" asp-controller="Home" asp-action="Index" >Help Center</a></li>
+                        <li><a class="dropdown-item text-center" asp-controller="Home" asp-action="Index" >Log Out</a></li>
+                    </ul>
+
+
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+        <!--Page Search-->
+    <div class="main-search">
+        <div class="container p-0 d-flex align-items-center">
+            <form role="form" class="col-md-6 col-sm-5 col-3">
+                <div class="search m-2">
+                    <input type="text" class="form-control mainLoginInput"
+                           style="border: none; font-size: 27px; color:#757575" id="iconified"
+                           placeholder="&#61442; Search mission..." />
+                </div>
+            </form>
+            <div class="col-md-6 col-sm-7 col-9 d-flex align-items-center justify-content-end">
+                <div class="country">
+                    <select class="form-select mx-2" style="font-size: 20px; color: #414141;" aria-label="Default select example">
+                        <option selected>Country</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="city">
+                    <select class="form-select mx-2" style="font-size: 20px; color: #414141;" aria-label="Default select example">
+                        <option selected>City</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="theme">
+                    <select class="form-select mx-2" style="font-size: 20px; color: #414141;" aria-label="Default select example">
+                        <option selected>Themes</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="skills">
+                    <select class="form-select mx-2" style="font-size: 20px; color: #414141;" aria-label="Default select example">
+                        <option selected>Skills</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        
+            @RenderBody()
+       
+
+        <!--Page Footer-->
+        <div class="footer border">
+            <div class="container p-0">
+                <p style="color: #414141; font-size: 20px">Privacy Policy</p>
+            </div>
+        </div>
+       
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
