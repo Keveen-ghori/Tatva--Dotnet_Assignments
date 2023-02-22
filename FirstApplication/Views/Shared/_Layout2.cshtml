@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+  
+    <!-- Header -->
+    <div class="container-fluid border-bottom g-0 header">
+        <nav class="navbar-expand-md navbar navbar-expand-lg g-0 bg-body-tertiary container-fluid">
+            <div class="container g-0 d-flex justify-content-between" style="min-height: 72px;">
+                <div class="dummy">
+                    <button class="navbar-toggler border-0" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bi bi-list navbar-toggler-icon"></i>
+                    </button>
+                    <a class="navbar-brand mx-lg-0" asp-controller="" asp-action="Index">
+                        <img alt="logo" src="~/Assets/logo.png" />
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link" aria-current="page" asp-controller="" asp-action="Index" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Explore <img class="mx-1"
+                                             src="~/Assets/drop-down.png" alt="dropdown">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-controller="" asp-action="Index">Action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" asp-controller="" asp-action="Index">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" asp-controller="" asp-action="Index">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" asp-controller="" asp-action="Index">Stories</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link " asp-controller="" asp-action="Index">News</a>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link" asp-controller="" asp-action="Index" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Policy <img class="mx-1" src="~/Assets/drop-down.png" alt="dropdown">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-controller="" asp-action="Index">Action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" asp-controller="" asp-action="Index">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" asp-controller="" asp-action="Index">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+                            <li class="nav-item dropdown px-3">
+                                <a asp-controller="Home" asp-action="Index" id="navbarDropdown" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false" class="notification"
+                                   data-toggle="modal" data-target="#form">
+                                    <img src="~/Assets/bell.png" alt="">
+                                    <span class="badge">6</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
+                                    style="width: 400px;">
+                                    <div class="container d-flex justify-content-start align-items-center">
+                                        <a asp-controller="" asp-action="Index" class="text-black">
+                                            <i class="fa fa-gear"
+                                               style="font-size:24px;"></i>
+                                        </a>
+                                        <h3 class="px-5">Notification</h3>
+                                        <a asp-controller="" asp-action="Index" class="text-black text-decoration-none dropdown-item">Clear All</a>
+                                    </div>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <div class="container">
+                                        <div class="notify d-flex py-2">
+                                            <img src="~/Assets/user1.png" alt="" class="px-1">
+                                            <p class="px-2">John Doe: Recommend Mission - Grow Trees</p>
+                                        </div>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <div class="notify d-flex py-2">
+                                        <img src="~/Assets/user1.png" alt="" class="px-1">
+                                        <p class="px-2">John Doe: Recommend Mission - Grow Trees</p>
+                                    </div>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <div class="notify d-flex py-2">
+                                        <img src="~/Assets/user1.png" alt="" class="px-1">
+                                        <p class="px-2">John Doe: Recommend Mission - Grow Trees</p>
+                                    </div>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <div class="notify d-flex py-2">
+                                        <img src="~/Assets/user1.png" alt="" class="px-1">
+                                        <p class="px-2">John Doe: Recommend Mission - Grow Trees</p>
+                                    </div>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <div class="notify d-flex py-2">
+                                        <img src="~/Assets/user1.png" alt="" class="px-1">
+                                        <p class="px-2">John Doe: Recommend Mission - Grow Trees</p>
+                                    </div>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <div class="notify d-flex py-2">
+                                        <img src="~/Assets/user1.png" alt="" class="px-1">
+                                        <p class="px-2">John Doe: Recommend Mission - Grow Trees</p>
+                                    </div>
+                    </div>
+                    </ul>
+
+                    </ul>
+                    <ul class="navbar-nav me-auto mb- mb-lg-0 mx-5">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link d-flex align-items-center" aria-current="page" asp-controller="" asp-action="Index"
+                               id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <img class="" width="40px" height="40px"
+                                     style="border-radius: 50%;" src="~/Assets/user-img.png"
+                                     alt="dropdown">
+                                <span class="px-2">John Doe</span>
+                                <img src="~/Assets/drop-down.png" alt="" class="">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-controller="" asp-action="Index">Action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" asp-controller="" asp-action="Index">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" asp-controller="" asp-action="Index">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+    </div>
+    </nav>
+    </div>
+
+    <!-- Search Field -->
+    <div class="container-fluid g-0">
+        <nav class="navbar border-bottom navbar-expand-lg navbar-light">
+            <div class="container g-0 d-flex justify-content-between" style="min-height: 78px;">
+
+                <form class="d-flex w-50 search">
+                    <i class="fa fa-search px-3"
+                       style="font-size: 20px; position: relative; top:10px; left: -10px; color: #757575;"></i>
+                    <input class="form-control border-0" type="search" placeholder="Search mission..."
+                           style="font-size: 20px; color: #757575;">
+                </form>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="~/Assets/filter.png" alt="">
+                </button>
+                <div class="collapse navbar-collapse w-50 justify-content-end" style="height: 78px; position: relative;"
+                     id="navbarSupportedContent1">
+                    <select id="test" class="form-select form-select-lg" aria-label=".form-select-lg example"
+                            style="height: 78px; border-radius: 0px;">
+                        <option selected>Country</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select form-select-lg" aria-label=".form-select-lg example"
+                            style="height: 78px; border-radius: 0px;">
+                        <option selected>City</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select form-select-lg" aria-label=".form-select-lg example"
+                            style="height: 78px; border-radius: 0px;">
+                        <option selected>Theme</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select form-select-lg" aria-label=".form-select-lg example"
+                            style="height: 78px; border-radius: 0px;">
+                        <option selected>Skills</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </div>
+   
+        @RenderBody()
+    <div class="container-fluid g-0 pt-5 border-top">
+        <div class="container text-start" style="font-size: 14px;">
+            Privacy Policy
+        </div>
+    </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+</body>
+</html>
