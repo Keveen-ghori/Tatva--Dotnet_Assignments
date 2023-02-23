@@ -437,8 +437,44 @@
       "PackagePath": "staticwebassets\\Assets\\xlsx.png"
     },
     {
+      "Id": "C:\\Users\\pci101\\Desktop\\Dotnet\\FirstApplication\\FirstApplication\\wwwroot\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\pci101\\Desktop\\Dotnet\\FirstApplication\\FirstApplication\\wwwroot\\css\\font-awesome.css.map",
+      "PackagePath": "staticwebassets\\css\\font-awesome.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pci101\\Desktop\\Dotnet\\FirstApplication\\FirstApplication\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
       "Id": "C:\\Users\\pci101\\Desktop\\Dotnet\\FirstApplication\\FirstApplication\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\pci101\\Desktop\\Dotnet\\FirstApplication\\FirstApplication\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\pci101\\Desktop\\Dotnet\\FirstApplication\\FirstApplication\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\pci101\\Desktop\\Dotnet\\FirstApplication\\FirstApplication\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\pci101\\Desktop\\Dotnet\\FirstApplication\\FirstApplication\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\pci101\\Desktop\\Dotnet\\FirstApplication\\FirstApplication\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\pci101\\Desktop\\Dotnet\\FirstApplication\\FirstApplication\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
     },
     {
       "Id": "C:\\Users\\pci101\\Desktop\\Dotnet\\FirstApplication\\FirstApplication\\wwwroot\\jquery.js",
