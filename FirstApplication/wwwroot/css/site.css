@@ -120,3 +120,21 @@ input[type='file'] {
         margin-left: 0 !important;
     }
 }
+
+
+.background-img {
+    background-image: url("~/Assets/Grow-Trees-On-the-path-to-environment-sustainability.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("~/Assets/Grow-Trees-On-the-path-to-environment-sustainability.png");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

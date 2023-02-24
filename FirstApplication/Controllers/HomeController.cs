@@ -29,5 +29,11 @@ namespace FirstApplication.Controllers
             return View();
         }
 
+        [Route("Home/Story")]
+        public IActionResult Story()
+        {
+            return View();
+        }
+
     }
 }

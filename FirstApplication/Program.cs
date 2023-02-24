@@ -1,8 +1,12 @@
+using FirstApplication.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+var connection = "Data Source=PCI101\\SQL2019; Database=CI Platform; User Id=sa; Password=Tatva@123;Trusted_Connection=SSPI;Encrypt=false;TrustServerCertificate=true";
+builder.Services.AddDbContext<CiPlatformContext>(options => options.UseSqlServer(connection));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
